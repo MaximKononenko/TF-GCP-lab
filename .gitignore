@@ -1,0 +1,8 @@
+creds.sh
+.terraform
+terraform.tfstate*
+ip_address.txt
+terraform.tfvars
+*.backup
+*.lock*
+account.json
