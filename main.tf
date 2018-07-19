@@ -5,11 +5,12 @@ provider "google" {
 //  billing_account   = "${var.billing_account}"
 }
 
-resource "google_project_services" "main" {
-  project  = "${project}"
-  services = [
-    "compute-component.googleapis.com",
-  ]
+// resource "google_project_services" "main" {
+//   project  = "${var.project}"
+//   services = [
+//     "compute-component.googleapis.com",
+//   ]
+// }
 
 resource "google_compute_instance" "ovirt-engine-instance" {
   name = "ovirt-engine"
